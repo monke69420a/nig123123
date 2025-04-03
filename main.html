@@ -25,8 +25,11 @@
     </style>
     <script>
         function playSound() {
-            let audio = new Audio('https://monke69420a.github.io/women.github.io/sound.mp3');
-            audio.play().catch(error => console.log("Autoplay blocked:", error));
+            let audio = new Audio('https://monke69420a.github.io/women.github.io/sound.mp3'); // Full path to MP3
+            audio.play().catch(error => {
+                console.log("Error playing audio:", error); // Log any errors
+                alert("Failed to play sound! Please check the browser console for errors.");
+            });
         }
     </script>
 </head>
