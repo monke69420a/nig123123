@@ -3,15 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tezgah</title>
+    <title>Click to Play Sound</title>
+    <style>
+        /* Style the button to be as large as possible */
+        button {
+            width: 100vw;   /* Full width of the viewport */
+            height: 100vh;  /* Full height of the viewport */
+            font-size: 3em; /* Large text size */
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button:active {
+            background-color: #45a049; /* Darker green when clicked */
+        }
+    </style>
     <script>
         function playSound() {
             let audio = new Audio('https://monke69420a.github.io/women.github.io/sound.mp3');
-            audio.play();
+            audio.play().catch(error => console.log("Autoplay blocked:", error));
         }
     </script>
 </head>
-<body onclick="playSound()">
-    <h1>hediye için bas!</h1>
+<body>
+    <button onclick="playSound()">Click Here to Play Sound!</button>
 </body>
 </html>
