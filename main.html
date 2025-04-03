@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Play Sound</title>
+    <title>tezgah</title>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let audio = new Audio('https://monke69420a.github.io/women.github.io/sound.mp3');  // MP3 file in the root directory
-            audio.play().catch(error => console.log("Autoplay blocked:", error));
-        });
+        function playSound() {
+            let audio = new Audio('https://monke69420a.github.io/women.github.io/sound.mp3');
+            audio.play();
+        }
     </script>
 </head>
-<body>
-    <h1>a a a a!</h1>
-    <p>Siktim.</p>
+<body onclick="playSound()">
+    <h1>hediye için bas!</h1>
 </body>
 </html>
